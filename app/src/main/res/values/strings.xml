@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="tahun">Year</string>
+    <string name="genre">Genre</string>
+    <string name="search">Search</string>
+    <string name="detail">Detail</string>
+    <string name="director_text">Director</string>
+    <string name="director">Director</string>
+    <string name="desc_text">Description</string>
+    <string name="desc">Description</string>
+    <string name="main_menu">Movie App</string>
+    <string name="fav_menu">Favorite</string>
+    <string name="favorites">Favorites</string>
+    <string name="rating_score">Score</string>
+    <string name="judul">Title</string>
+</resources>

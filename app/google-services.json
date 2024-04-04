@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "296075310035",
+    "firebase_url": "https://movieeeapp-default-rtdb.firebaseio.com",
+    "project_id": "movieeeapp",
+    "storage_bucket": "movieeeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296075310035:android:89cdf4e07e7f78704af526",
+        "android_client_info": {
+          "package_name": "com.dicoding.unescoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhGYSAecou_gdBAHjrJ7lVICFjrC9Pt-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296075310035:android:b55893eabcd620634af526",
+        "android_client_info": {
+          "package_name": "com.example.movieapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhGYSAecou_gdBAHjrJ7lVICFjrC9Pt-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
