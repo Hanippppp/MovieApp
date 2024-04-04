@@ -13,4 +13,6 @@
     <string name="favorites">Favorites</string>
     <string name="rating_score">Score</string>
     <string name="judul">Title</string>
+    <string name="dark">Dark Mode</string>
+    <string name="setting">Setting</string>
 </resources>

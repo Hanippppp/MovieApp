@@ -2,9 +2,13 @@ package com.example.movieapp.ui.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
+import android.widget.Button
+import android.widget.CompoundButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,6 +18,11 @@ import com.example.movieapp.model.Movie
 import com.example.movieapp.ui.detail.DetailActivity
 import com.example.movieapp.ui.detail.FavActivity
 import com.example.movieapp.ui.detail.FavViewModel
+import com.example.movieapp.ui.setting.SettingActivity
+import com.example.movieapp.ui.setting.SettingPreferences
+import com.example.movieapp.ui.setting.SettingViewModel
+import com.example.movieapp.ui.setting.ViewModelFactory
+import com.example.movieapp.ui.setting.dataStore
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -37,6 +46,19 @@ class MainActivity : AppCompatActivity(),
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val pref = SettingPreferences.getInstance(application.dataStore)
+        val settingViewModel = ViewModelProvider(this, ViewModelFactory(pref)).get(
+            SettingViewModel::class.java
+        )
+
+        settingViewModel.getThemeSettings().observe(this) { isDarkModeActive: Boolean ->
+            if (isDarkModeActive) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
 
         mToolbar = binding.toolbar2
         setSupportActionBar(mToolbar)
@@ -93,6 +115,12 @@ class MainActivity : AppCompatActivity(),
 
                 R.id.favorite -> {
                     val intent = Intent(this, FavActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+
+                R.id.setting -> {
+                    val intent = Intent(this, SettingActivity::class.java)
                     startActivity(intent)
                     true
                 }
