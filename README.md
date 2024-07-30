@@ -1,12 +1,12 @@
 # MovieApp
 
-MovieApp adalah aplikasi Android yang menampilkan daftar film dengan berbagai fitur menarik seperti yang ditunjukkan dalam screenshot di bawah ini. 
+MovieApp is an Android app that features a list of movies with various interesting features.
 
 ## Fitur
 
-- **Daftar Film**: Menampilkan list film-film dengan poster, tahun rilis, judul, genre, dan rating.
-- **Detail Film**: Ketika salah satu film diklik, akan menampilkan poster film, judul, genre, rating, tahun, sutradara, dan deskripsi.
-- **Firebase Integration**: List film disimpan dan diambil dari Firebase.
-- **Favorit**: Tombol favorit yang akan memasukkan film ke dalam list favorite movie yang tersimpan di local storage.
-- **Pencarian**: Fitur pencarian untuk memudahkan pengguna menemukan film.
-- **Dark Mode**: Mendukung tampilan dark mode.
+- **Movie List**: Displays a list of movies with poster, release year, title, genre, and rating.
+- **Movie Details**: When a movie is clicked, it will display the movie poster, title, genre, rating, year, director, and description.
+- **Firebase Integration**: Movie list is stored and retrieved from Firebase.
+- **Favorites**: Favorite button that will put the movie into the favorite movie list stored in local storage.
+- **Search**: Search feature to make it easier for users to find movies.
+- **Dark Mode**: Supports dark mode display.
