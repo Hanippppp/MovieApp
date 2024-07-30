@@ -2,7 +2,7 @@
 
 MovieApp is an Android app that features a list of movies with various interesting features.
 
-## Fitur
+## Features
 
 - **Movie List**: Displays a list of movies with poster, release year, title, genre, and rating.
 - **Movie Details**: When a movie is clicked, it will display the movie poster, title, genre, rating, year, director, and description.
